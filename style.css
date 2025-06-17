@@ -1,0 +1,273 @@
+
+:root {
+    --primary-brand: #39D98A; /* Jupiter's vibrant electric green */
+    --hover-effect: #41F7A0;   /* A brighter green for interaction */
+    --bg-main: #1F2024;      /* The very dark main background */
+    --bg-card: #2A2C32;      /* A slightly lighter gray for cards and surfaces */
+    --text-primary: #F3F3F3;  /* Off-white for primary text */
+    --text-muted: #9CA3AF;   /* Lighter gray for secondary text */
+    --border-color: #373A40; /* A subtle border color for dark mode */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary); /* Default text color is now light */
+    line-height: 1.6;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-card); /* Use card color for header */
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-brand);
+}
+
+.main-nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary); /* Light text for nav links */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-brand);
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.project-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #FFFFFF; /* Brighter white for the main title */
+}
+
+.project-pitch {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-brand);
+    color: #000; /* Black text on the bright green button for high contrast */
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700; /* Bolder text on button */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--hover-effect);
+}
+
+/* Common Section Styling */
+.section-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+/* Features Section */
+.features-section {
+    padding: 3rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: none; /* Remove shadow, use borders and color for depth */
+    border: 1px solid var(--border-color);
+    text-align: center;
+    border-top: 4px solid var(--primary-brand); }
+    
+    .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.feature-card p {
+    color: var(--text-muted);
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--bg-card);
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    border: 1px solid var(--border-color);
+}
+
+.team-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-member-avatar { margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+}
+
+.team-member-info h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.team-member-info .role {
+    color: var(--primary-brand);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.bio-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.bio-card {
+    background-color: var(--bg-main); /* Use main BG for inner cards */
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary-brand);
+}
+
+.bio-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.bio-card ul {
+    list-style: none;
+}
+
+.bio-card li {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .main-nav {
+        margin-top: 1rem;
+    }
+    
+    .main-nav a {
+        margin: 0 0.75rem;
+    }
+    
+    .project-title {
+        font-size: 2.5rem;
+    }
+    
+    .project-pitch {
+        font-size: 1.1rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .team-section {
+        padding: 3rem 1.5rem;
+    }
+}
+
