@@ -37,7 +37,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-brand);
+    color: var(--primary-brand); /* Bright green for the logo */
 }
 
 .main-nav a {
@@ -88,7 +88,7 @@ body {
 .cta-button {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: var(--primary-brand);
+    background-color: orange;
     color: #000; /* Black text on the bright green button for high contrast */
     text-decoration: none;
     border-radius: 6px;
