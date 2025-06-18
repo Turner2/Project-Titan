@@ -1,4 +1,4 @@
-# Alt school second semester projects
+# Alt school second semester project
 
 # Project Titan: A Full-Stack Cloud Deployment Showcase
 
